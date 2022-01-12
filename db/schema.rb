@@ -10,14 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_31_001805) do
+ActiveRecord::Schema.define(version: 2022_01_08_022308) do
+
+  create_table "character_stats", force: :cascade do |t|
+    t.string "goals"
+    t.string "assists"
+    t.string "saves"
+    t.string "goals_conceded"
+    t.string "shots_faced"
+    t.string "appearances"
+    t.string "yellow_cards"
+    t.string "red_cards"
+    t.string "win_ratio"
+    t.string "bio"
+    t.string "experience"
+    t.string "social_media"
+    t.string "image"
+    t.integer "character_id"
+  end
 
   create_table "characters", force: :cascade do |t|
     t.string "full_name"
     t.string "date_of_birth"
     t.string "nationality"
     t.string "position"
+    t.string "field_placement"
     t.string "image"
+    t.string "flag"
     t.string "jersey_number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

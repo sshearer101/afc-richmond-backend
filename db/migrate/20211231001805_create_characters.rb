@@ -5,9 +5,11 @@ class CreateCharacters < ActiveRecord::Migration[6.1]
       t.string :date_of_birth
       t.string :nationality
       t.string :position
+      t.string :field_placement 
       t.string :image
+      t.string :flag
       t.string :jersey_number
-      
+
       t.timestamps
     end
   end
