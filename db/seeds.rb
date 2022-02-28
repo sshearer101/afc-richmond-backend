@@ -1,5 +1,6 @@
 Character.destroy_all
 CharacterStat.destroy_all
+Result.destroy_all
 
 tom_obrian = Character.create(full_name: "Tom O'Brian", date_of_birth: "February 5, 1997", nationality: "English", position: "Goalkeeper", field_placement: "Goalkeeper" , image: "../Images/Characters/Tom_O'Brian.png", flag: "../Images/Flags/English.png", jersey_number: "1")
 
@@ -48,5 +49,13 @@ thierry_zoreaux = Character.create(full_name: "Thierry Zoreaux", date_of_birth: 
 
 
 tom_obrian_stats = CharacterStat.create(goals: "0", assists: "0", saves: "105", goals_conceded: "27", shots_faced: "263", appearances: "15", yellow_cards: "3", red_cards: "0", win_ratio: "68%", bio:"goalie", experience:"AFC Richmond Youth System", social_media:"", image:"", character_id: tom_obrian.id)
+
+
+richmond = Result.create(team_name: "Richmond", location: "Nelson Road Stadium", logo: "../Images/Crests/Richmond_Crest.jpeg", match_report: "", team_id: 1)
+west_ham = Result.create(team_name: "West Ham", location: "Upton Park", logo: "../Images/Crests/West_Ham_Crest.jpeg", match_report: "", team_id: 2)
+tottenham = Result.create(team_name: "Tottenham", location: "Tottenham Hotspur Stadium", logo: "../Images/Crests/Tottenham_Crest.jpeg", match_report: "", team_id: 3)
+man_city = Result.create(team_name: "Man City", location: "Ettihad Stadium", logo: "../Images/Crests/Man_City_Crest.jpeg", match_report: "", team_id: 4)
+arsenal = Result.create(team_name: "Arsenal", location: "Emirates Stadium", logo: "../Images/Crests/Arsenal_Crest.jpeg", match_report: "", team_id: 5)
+chelsea = Result.create(team_name: "Chelsea", location: "Stamford Bridge", logo: "../Images/Crests/Chelsea_Crest.jpeg", match_report: "", team_id: 6)
 
 

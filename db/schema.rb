@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_08_022308) do
+ActiveRecord::Schema.define(version: 2022_02_23_234253) do
 
   create_table "character_stats", force: :cascade do |t|
     t.string "goals"
@@ -38,6 +38,16 @@ ActiveRecord::Schema.define(version: 2022_01_08_022308) do
     t.string "image"
     t.string "flag"
     t.string "jersey_number"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "results", force: :cascade do |t|
+    t.string "team_name"
+    t.string "location"
+    t.string "logo"
+    t.string "match_report"
+    t.integer "team_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
