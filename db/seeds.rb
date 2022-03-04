@@ -59,3 +59,4 @@ arsenal = Result.create(team_name: "Arsenal", location: "Emirates Stadium", logo
 chelsea = Result.create(team_name: "Chelsea", location: "Stamford Bridge", logo: "../Images/Crests/Chelsea_Crest.jpeg", match_report: "", team_id: 6)
 
 
+

@@ -6,7 +6,7 @@ class CharacterStatsController < ApplicationController
     end
   
     def show
-        character_stat = CharacterStat.find(params[:id])
+        character_stat = Character.find(params[:character_id]).character_stat
         render json: character_stat
     end
   

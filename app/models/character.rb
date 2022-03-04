@@ -1,3 +1,3 @@
 class Character < ApplicationRecord
-    has_many :character_stats
+    has_one :character_stat
 end

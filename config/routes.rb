@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :characters
-  resources :character_stats
+  resources :characters do
+    resource :character_stats
+  end
   resources :results
 
 end

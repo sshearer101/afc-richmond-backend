@@ -2,7 +2,7 @@ class CharactersController < ApplicationController
 
     def index
       @characters = Character.all
-      render json: @characters
+      render json: @characters, include: [:character_stat]
     end
   
     def show
