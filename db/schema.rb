@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_23_234253) do
+ActiveRecord::Schema.define(version: 2022_03_09_235026) do
 
   create_table "character_stats", force: :cascade do |t|
     t.string "goals"
@@ -42,7 +42,23 @@ ActiveRecord::Schema.define(version: 2022_02_23_234253) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "results", force: :cascade do |t|
+  create_table "league_data", force: :cascade do |t|
+    t.string "team_name"
+    t.string "position"
+    t.integer "played"
+    t.integer "win"
+    t.integer "draw"
+    t.integer "loss"
+    t.integer "points"
+  end
+
+  create_table "news_data", force: :cascade do |t|
+    t.string "image"
+    t.string "title"
+    t.string "category"
+  end
+
+  create_table "teams", force: :cascade do |t|
     t.string "team_name"
     t.string "location"
     t.string "logo"

@@ -1,6 +1,8 @@
 Character.destroy_all
 CharacterStat.destroy_all
-Result.destroy_all
+Team.destroy_all
+LeagueData.destroy_all
+NewsData.destroy_all
 
 tom_obrian = Character.create(full_name: "Tom O'Brian", date_of_birth: "February 5, 1997", nationality: "English", position: "Goalkeeper", field_placement: "Goalkeeper" , image: "../Images/Characters/Tom_O'Brian.png", flag: "../Images/Flags/English.png", jersey_number: "1")
 
@@ -51,12 +53,22 @@ thierry_zoreaux = Character.create(full_name: "Thierry Zoreaux", date_of_birth: 
 tom_obrian_stats = CharacterStat.create(goals: "0", assists: "0", saves: "105", goals_conceded: "27", shots_faced: "263", appearances: "15", yellow_cards: "3", red_cards: "0", win_ratio: "68%", bio:"goalie", experience:"AFC Richmond Youth System", social_media:"", image:"", character_id: tom_obrian.id)
 
 
-richmond = Result.create(team_name: "Richmond", location: "Nelson Road Stadium", logo: "../Images/Crests/Richmond_Crest.jpeg", match_report: "", team_id: 1)
-west_ham = Result.create(team_name: "West Ham", location: "Upton Park", logo: "../Images/Crests/West_Ham_Crest.jpeg", match_report: "", team_id: 2)
-tottenham = Result.create(team_name: "Tottenham", location: "Tottenham Hotspur Stadium", logo: "../Images/Crests/Tottenham_Crest.jpeg", match_report: "", team_id: 3)
-man_city = Result.create(team_name: "Man City", location: "Ettihad Stadium", logo: "../Images/Crests/Man_City_Crest.jpeg", match_report: "", team_id: 4)
-arsenal = Result.create(team_name: "Arsenal", location: "Emirates Stadium", logo: "../Images/Crests/Arsenal_Crest.jpeg", match_report: "", team_id: 5)
-chelsea = Result.create(team_name: "Chelsea", location: "Stamford Bridge", logo: "../Images/Crests/Chelsea_Crest.jpeg", match_report: "", team_id: 6)
+
+richmond = Team.create(team_name: "Richmond", location: "Nelson Road Stadium", logo: "../Images/Crests/Richmond_Crest.jpeg", match_report: "", team_id: 1)
+west_ham = Team.create(team_name: "West Ham", location: "Upton Park", logo: "../Images/Crests/West_Ham_Crest.jpeg", match_report: "", team_id: 2)
+tottenham = Team.create(team_name: "Tottenham", location: "Tottenham Hotspur Stadium", logo: "../Images/Crests/Tottenham_Crest.jpeg", match_report: "", team_id: 3)
+man_city = Team.create(team_name: "Man City", location: "Ettihad Stadium", logo: "../Images/Crests/Man_City_Crest.jpeg", match_report: "", team_id: 4)
+arsenal = Team.create(team_name: "Arsenal", location: "Emirates Stadium", logo: "../Images/Crests/Arsenal_Crest.jpeg", match_report: "", team_id: 5)
+chelsea = Team.create(team_name: "Chelsea", location: "Stamford Bridge", logo: "../Images/Crests/Chelsea_Crest.jpeg", match_report: "", team_id: 6)
 
 
+
+
+richmond_data = LeagueData.create(team_name: "Richmond", position: "10th", played: 15, win: 4, draw: 7, loss: 4, points: 19)
+
+
+ted_article = NewsData.create(image: "../Images/Articles/ted_lasso.jpeg", title: "Manager of the Month", category: "Richmond News")
+richmond_loss = NewsData.create(image: "../Images/Articles/richmond_loss.jpeg", title: "Devastating Derby Defeat", category: "Match Report")
+jan_maas_article = NewsData.create(image: "../Images/Articles/jan_maas_profile.jpeg", title: "Getting to Know the Real Jan Maas", category: "Richmond News")
+match_preview = NewsData.create(image: "../Images/Articles/game_preview.jpeg", title: "Get Back to Winning Ways?", category: "Match Preview")
 
