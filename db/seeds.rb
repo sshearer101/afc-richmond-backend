@@ -3,6 +3,8 @@ CharacterStat.destroy_all
 Team.destroy_all
 LeagueData.destroy_all
 NewsData.destroy_all
+QuizQuestion.destroy_all
+QuizAnswer.destroy_all
 
 tom_obrian = Character.create(full_name: "Tom O'Brian", date_of_birth: "February 5, 1997", nationality: "English", position: "Goalkeeper", field_placement: "Goalkeeper" , image: "../Images/Characters/Tom_O'Brian.png", flag: "../Images/Flags/English.png", jersey_number: "1")
 
@@ -71,4 +73,22 @@ ted_article = NewsData.create(image: "../Images/Articles/ted_lasso.jpeg", title:
 richmond_loss = NewsData.create(image: "../Images/Articles/richmond_loss.jpeg", title: "Devastating Derby Defeat", category: "Match Report")
 jan_maas_article = NewsData.create(image: "../Images/Articles/jan_maas_profile.jpeg", title: "Getting to Know the Real Jan Maas", category: "Richmond News")
 match_preview = NewsData.create(image: "../Images/Articles/game_preview.jpeg", title: "Get Back to Winning Ways?", category: "Match Preview")
+
+
+quiz_questions_array = QuizQuestion.create(question_one: "Would you pass the ball to an open teammate or try and score yourself?",
+                                             question_two: "Which of the following describes you best?", 
+                                             question_three: "What is your favorite position on the field?")
+
+# question_one = QuizQuestion.create()
+
+
+
+
+
+question_one_answers = QuizAnswer.create(answer_one: "pass", answer_two: "shoot", answer_three: "", answer_four: "", quiz_question_id: quiz_questions_array.id)
+
+question_two_answers = QuizAnswer.create(answer_one: "Vain", answer_two: "Selfless", answer_three: "Intelligent", answer_four: "Positive", quiz_question_id: quiz_questions_array.id)
+
+question_one_answers = QuizAnswer.create(answer_one: "Goalkeeper", answer_two: "Defender", answer_three: "Midfielder", answer_four: "Forward", quiz_question_id: quiz_questions_array.id)
+
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_09_235026) do
+ActiveRecord::Schema.define(version: 2022_03_12_233539) do
 
   create_table "character_stats", force: :cascade do |t|
     t.string "goals"
@@ -56,6 +56,24 @@ ActiveRecord::Schema.define(version: 2022_03_09_235026) do
     t.string "image"
     t.string "title"
     t.string "category"
+  end
+
+  create_table "quiz_answers", force: :cascade do |t|
+    t.string "answer_one"
+    t.string "answer_two"
+    t.string "answer_three"
+    t.string "answer_four"
+    t.integer "quiz_question_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "quiz_questions", force: :cascade do |t|
+    t.string "question_one"
+    t.string "question_two"
+    t.string "question_three"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "teams", force: :cascade do |t|
