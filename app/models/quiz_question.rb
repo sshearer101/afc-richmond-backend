@@ -1,3 +1,3 @@
 class QuizQuestion < ApplicationRecord
-    has_many :quiz_answers
+    has_one :quiz_answer
 end

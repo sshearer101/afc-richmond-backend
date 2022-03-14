@@ -75,20 +75,18 @@ jan_maas_article = NewsData.create(image: "../Images/Articles/jan_maas_profile.j
 match_preview = NewsData.create(image: "../Images/Articles/game_preview.jpeg", title: "Get Back to Winning Ways?", category: "Match Preview")
 
 
-quiz_questions_array = QuizQuestion.create(question_one: "Would you pass the ball to an open teammate or try and score yourself?",
-                                             question_two: "Which of the following describes you best?", 
-                                             question_three: "What is your favorite position on the field?")
-
-# question_one = QuizQuestion.create()
 
 
+question_one = QuizQuestion.create(question: "Would you pass the ball to an open teammate or try and score yourself?")
+
+question_two = QuizQuestion.create(question: "Which of the following describes you best?")
+
+question_three = QuizQuestion.create(question: "What is your favorite position on the field?")
 
 
 
-question_one_answers = QuizAnswer.create(answer_one: "pass", answer_two: "shoot", answer_three: "", answer_four: "", quiz_question_id: quiz_questions_array.id)
-
-question_two_answers = QuizAnswer.create(answer_one: "Vain", answer_two: "Selfless", answer_three: "Intelligent", answer_four: "Positive", quiz_question_id: quiz_questions_array.id)
-
-question_one_answers = QuizAnswer.create(answer_one: "Goalkeeper", answer_two: "Defender", answer_three: "Midfielder", answer_four: "Forward", quiz_question_id: quiz_questions_array.id)
+quiz_answer_one = QuizAnswer.create(answer_one: "Pass", answer_two: "Shoot", answer_three: "", answer_four: "", quiz_question_id: question_one.id)
+quiz_answer_two = QuizAnswer.create(answer_one: "Vain", answer_two: "Selfless", answer_three: "Intelligent", answer_four: "Positive", quiz_question_id: question_two.id)
+quiz_answer_three = QuizAnswer.create(answer_one: "Goalkeeper", answer_two: "Defender", answer_three: "Midfielder", answer_four: "Forward", quiz_question_id: question_three.id)
 
 

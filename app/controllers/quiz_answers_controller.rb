@@ -1,5 +1,6 @@
 class QuizAnswersController < ApplicationController
-        def index
+
+    def index
         @quiz_answers = QuizAnswer.all
         render json: @quiz_answers
       end
@@ -9,5 +10,4 @@ class QuizAnswersController < ApplicationController
           render json: quiz_answer
       end
 end
-
 

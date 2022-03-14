@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_12_233539) do
+ActiveRecord::Schema.define(version: 2022_03_14_223136) do
 
   create_table "character_stats", force: :cascade do |t|
     t.string "goals"
@@ -69,9 +69,7 @@ ActiveRecord::Schema.define(version: 2022_03_12_233539) do
   end
 
   create_table "quiz_questions", force: :cascade do |t|
-    t.string "question_one"
-    t.string "question_two"
-    t.string "question_three"
+    t.string "question"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

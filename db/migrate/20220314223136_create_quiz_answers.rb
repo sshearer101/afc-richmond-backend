@@ -6,11 +6,7 @@ class CreateQuizAnswers < ActiveRecord::Migration[6.1]
       t.string :answer_three
       t.string :answer_four
       t.integer :quiz_question_id
-
-
       t.timestamps
     end
   end
 end
-
-

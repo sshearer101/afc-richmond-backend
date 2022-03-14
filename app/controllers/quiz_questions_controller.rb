@@ -1,7 +1,7 @@
 class QuizQuestionsController < ApplicationController
     def index
         @quiz_questions = QuizQuestion.all
-        render json: @quiz_questions, include: [:quiz_answers]
+        render json: @quiz_questions, include: [:quiz_answer]
       end
     
       def show
