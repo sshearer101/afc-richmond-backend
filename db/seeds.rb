@@ -77,16 +77,42 @@ match_preview = NewsData.create(image: "../Images/Articles/game_preview.jpeg", t
 
 
 
-question_one = QuizQuestion.create(question: "Would you pass the ball to an open teammate or try and score yourself?")
+# question_one = QuizQuestion.create(question: "Would you pass the ball to an open teammate or try and score yourself?")
 
-question_two = QuizQuestion.create(question: "Which of the following describes you best?")
+# question_two = QuizQuestion.create(question: "Which of the following describes you best?")
 
-question_three = QuizQuestion.create(question: "What is your favorite position on the field?")
+# question_three = QuizQuestion.create(question: "What is your favorite position on the field?")
 
 
 
-quiz_answer_one = QuizAnswer.create(answer_one: "Pass", answer_two: "Shoot", answer_three: "", answer_four: "", quiz_question_id: question_one.id)
-quiz_answer_two = QuizAnswer.create(answer_one: "Vain", answer_two: "Selfless", answer_three: "Intelligent", answer_four: "Positive", quiz_question_id: question_two.id)
-quiz_answer_three = QuizAnswer.create(answer_one: "Goalkeeper", answer_two: "Defender", answer_three: "Midfielder", answer_four: "Forward", quiz_question_id: question_three.id)
+# quiz_answer_one = QuizAnswer.create(answer_one: "Pass", answer_two: "Shoot", answer_three: "", answer_four: "", quiz_question_id: question_one.id)
+# quiz_answer_two = QuizAnswer.create(answer_one: "Vain", answer_two: "Selfless", answer_three: "Intelligent", answer_four: "Positive", quiz_question_id: question_two.id)
+# quiz_answer_three = QuizAnswer.create(answer_one: "Goalkeeper", answer_two: "Defender", answer_three: "Midfielder", answer_four: "Forward", quiz_question_id: question_three.id)
+
+
+
+
+q1_question = QuizQuestion.create(question: "What colors are AFC Richmond")
+
+q1_answer_a = QuizAnswer.create(answer: "Black and Yellow", is_correct: FALSE, quiz_question_id: q1_question.id)
+q1_answer_b = QuizAnswer.create(answer: "Blue and Red", is_correct: TRUE, quiz_question_id: q1_question.id)
+q1_answer_c = QuizAnswer.create(answer: "Black and Red", is_correct: FALSE, quiz_question_id: q1_question.id)
+q1_answer_d = QuizAnswer.create(answer: "Blue and Green", is_correct: FALSE, quiz_question_id: q1_question.id)
+
+
+# What is the AFC Richmond mascot?
+
+# Who is the AFC Richmond owner?
+
+# What is the AFC Richmond ground called?
+
+# Who was the AFC Richmond gaffer before Coach Lasso?
+
+# Who is the AFC Richmond captain? 
+
+# Which of the following players is rumored to be dating our owner?
+
+# Where is Roy Kent?
+
 
 

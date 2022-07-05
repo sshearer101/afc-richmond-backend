@@ -59,10 +59,8 @@ ActiveRecord::Schema.define(version: 2022_03_14_223136) do
   end
 
   create_table "quiz_answers", force: :cascade do |t|
-    t.string "answer_one"
-    t.string "answer_two"
-    t.string "answer_three"
-    t.string "answer_four"
+    t.string "answer"
+    t.boolean "is_correct"
     t.integer "quiz_question_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
