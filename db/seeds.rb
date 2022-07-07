@@ -92,7 +92,7 @@ match_preview = NewsData.create(image: "../Images/Articles/game_preview.jpeg", t
 
 
 
-q1_question = QuizQuestion.create(question: "What colors are AFC Richmond")
+q1_question = QuizQuestion.create(question: "What colors are AFC Richmond?")
 
 q1_answer_a = QuizAnswer.create(answer: "Black and Yellow", is_correct: FALSE, quiz_question_id: q1_question.id)
 q1_answer_b = QuizAnswer.create(answer: "Blue and Red", is_correct: TRUE, quiz_question_id: q1_question.id)
@@ -100,13 +100,41 @@ q1_answer_c = QuizAnswer.create(answer: "Black and Red", is_correct: FALSE, quiz
 q1_answer_d = QuizAnswer.create(answer: "Blue and Green", is_correct: FALSE, quiz_question_id: q1_question.id)
 
 
-# What is the AFC Richmond mascot?
 
-# Who is the AFC Richmond owner?
+q2_question = QuizQuestion.create(question: "What is the AFC Richmond mascot?")
 
-# What is the AFC Richmond ground called?
+q2_answer_a = QuizAnswer.create(answer: "A Magpie", is_correct: FALSE, quiz_question_id: q2_question.id)
+q2_answer_b = QuizAnswer.create(answer: "A Greyhound", is_correct: TRUE, quiz_question_id: q2_question.id)
+q2_answer_c = QuizAnswer.create(answer: "A Throstle", is_correct: FALSE, quiz_question_id: q2_question.id)
+q2_answer_d = QuizAnswer.create(answer: "A Lion", is_correct: FALSE, quiz_question_id: q2_question.id)
+
+
+q3_question = QuizQuestion.create(question: "Who is the current AFC Richmond owner?")
+
+q3_answer_a = QuizAnswer.create(answer: "Ted Lasso", is_correct: FALSE, quiz_question_id: q3_question.id)
+q3_answer_b = QuizAnswer.create(answer: "Rupert Mannion", is_correct: FALSE, quiz_question_id: q3_question.id)
+q3_answer_c = QuizAnswer.create(answer: "Leslie Higgins", is_correct: FALSE, quiz_question_id: q3_question.id)
+q3_answer_d = QuizAnswer.create(answer: "Rebecca Welton", is_correct: TRUE, quiz_question_id: q3_question.id)
+
+
+
+q4_question = QuizQuestion.create(question: "What is the AFC Richmond ground called?")
+
+q4_answer_a = QuizAnswer.create(answer: "St James' Park", is_correct: FALSE, quiz_question_id: q4_question.id)
+q4_answer_b = QuizAnswer.create(answer: "Elland Road", is_correct: FALSE, quiz_question_id: q4_question.id)
+q4_answer_c = QuizAnswer.create(answer: "Nelson Road", is_correct: TRUE, quiz_question_id: q4_question.id)
+q4_answer_d = QuizAnswer.create(answer: "Selhurst Park", is_correct: FALSE, quiz_question_id: q4_question.id)
+
 
 # Who was the AFC Richmond gaffer before Coach Lasso?
+
+
+q4_question = QuizQuestion.create(question: "Who was the AFC Richmond gaffer before Coach Lasso?")
+
+q4_answer_a = QuizAnswer.create(answer: "St James' Park", is_correct: FALSE, quiz_question_id: q_question.id)
+q4_answer_b = QuizAnswer.create(answer: "Elland Road", is_correct: FALSE, quiz_question_id: q4_question.id)
+q4_answer_c = QuizAnswer.create(answer: "Nelson Road", is_correct: TRUE, quiz_question_id: q4_question.id)
+q4_answer_d = QuizAnswer.create(answer: "Selhurst Park", is_correct: FALSE, quiz_question_id: q4_question.id)
 
 # Who is the AFC Richmond captain? 
 
