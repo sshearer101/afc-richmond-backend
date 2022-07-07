@@ -151,7 +151,6 @@ q7_answer_c = QuizAnswer.create(answer: "Roy Kent", is_correct: FALSE, quiz_ques
 q7_answer_d = QuizAnswer.create(answer: "Sam Obisanya", is_correct: TRUE, quiz_question_id: q7_question.id)
 
 
-# Where is Roy Kent?
 
 q8_question = QuizQuestion.create(question: "Where is Roy Kent?")
 
