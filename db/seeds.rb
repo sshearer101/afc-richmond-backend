@@ -126,21 +126,38 @@ q4_answer_c = QuizAnswer.create(answer: "Nelson Road", is_correct: TRUE, quiz_qu
 q4_answer_d = QuizAnswer.create(answer: "Selhurst Park", is_correct: FALSE, quiz_question_id: q4_question.id)
 
 
-# Who was the AFC Richmond gaffer before Coach Lasso?
+
+q5_question = QuizQuestion.create(question: "Who was the AFC Richmond gaffer before Coach Lasso?")
+
+q5_answer_a = QuizAnswer.create(answer: "Pep Guardiola", is_correct: FALSE, quiz_question_id: q5_question.id)
+q5_answer_b = QuizAnswer.create(answer: "George Catrick", is_correct: TRUE, quiz_question_id: q5_question.id)
+q5_answer_c = QuizAnswer.create(answer: "Steve Bruce", is_correct: FALSE, quiz_question_id: q5_question.id)
+q5_answer_d = QuizAnswer.create(answer: "Roy Kent", is_correct: FALSE, quiz_question_id: q5_question.id)
 
 
-q4_question = QuizQuestion.create(question: "Who was the AFC Richmond gaffer before Coach Lasso?")
+q6_question = QuizQuestion.create(question: "Who is the current AFC Richmond captain?")
 
-q4_answer_a = QuizAnswer.create(answer: "St James' Park", is_correct: FALSE, quiz_question_id: q_question.id)
-q4_answer_b = QuizAnswer.create(answer: "Elland Road", is_correct: FALSE, quiz_question_id: q4_question.id)
-q4_answer_c = QuizAnswer.create(answer: "Nelson Road", is_correct: TRUE, quiz_question_id: q4_question.id)
-q4_answer_d = QuizAnswer.create(answer: "Selhurst Park", is_correct: FALSE, quiz_question_id: q4_question.id)
+q6_answer_a = QuizAnswer.create(answer: "Isaac McAdoo", is_correct: TRUE, quiz_question_id: q6_question.id)
+q6_answer_b = QuizAnswer.create(answer: "Roy Kent", is_correct: FALSE, quiz_question_id: q6_question.id)
+q6_answer_c = QuizAnswer.create(answer: "Jan Maas", is_correct: FALSE, quiz_question_id: q6_question.id)
+q6_answer_d = QuizAnswer.create(answer: "Moe Bumbercatch", is_correct: FALSE, quiz_question_id: q6_question.id)
 
-# Who is the AFC Richmond captain? 
 
-# Which of the following players is rumored to be dating our owner?
+q7_question = QuizQuestion.create(question: "Which of the following players is rumored to be dating our owner?")
+
+q7_answer_a = QuizAnswer.create(answer: "Tom O'Brian", is_correct: FALSE, quiz_question_id: q7_question.id)
+q7_answer_b = QuizAnswer.create(answer: "Jamie Tartt", is_correct: FALSE, quiz_question_id: q7_question.id)
+q7_answer_c = QuizAnswer.create(answer: "Roy Kent", is_correct: FALSE, quiz_question_id: q7_question.id)
+q7_answer_d = QuizAnswer.create(answer: "Sam Obisanya", is_correct: TRUE, quiz_question_id: q7_question.id)
+
 
 # Where is Roy Kent?
 
+q8_question = QuizQuestion.create(question: "Where is Roy Kent?")
+
+q8_answer_a = QuizAnswer.create(answer: "He's nowhere to be seen...", is_correct: FALSE, quiz_question_id: q8_question.id)
+q8_answer_b = QuizAnswer.create(answer: "He's at the bar", is_correct: FALSE, quiz_question_id: q8_question.id)
+q8_answer_c = QuizAnswer.create(answer: "He's here, he's there, he's every-f***ing-where", is_correct: TRUE, quiz_question_id: q8_question.id)
+q8_answer_d = QuizAnswer.create(answer: "He's at West Ham", is_correct: FALSE, quiz_question_id: q8_question.id)
 
 
